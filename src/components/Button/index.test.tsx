@@ -29,4 +29,17 @@ describe("The Button Component", () => {
     expect(button).toBeInTheDocument();
     expect(fn).toBeCalledTimes(1);
   });
+
+  it("Should match snapshot", () => {
+    expect.assertions(1);
+
+    const fn = jest.fn();
+
+    const { container } = render(
+      <ThemeProvider theme={theme}>
+        <Button label="test" onClick={fn} />
+      </ThemeProvider>
+    );
+    expect(container).toMatchSnapshot();
+  });
 });

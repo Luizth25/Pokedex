@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The PokemonInfo Component Should match snapshot 1`] = `
+<div>
+  <div
+    class="sc-bcXHqe kGeEDM"
+  >
+    <h2
+      class="sc-gswNZR iXYRSr"
+    >
+      teste
+       
+      1
+    </h2>
+    <div
+      class="sc-hLBbgP Zpgwu"
+    >
+      <p
+        class="sc-dkrFOg jdRPmV"
+      >
+        2
+      </p>
+      <p
+        class="sc-dkrFOg jdRPmV"
+      >
+        2
+      </p>
+    </div>
+    <h2
+      class="sc-gswNZR iXYRSr"
+    >
+      teste 1
+    </h2>
+    <p>
+      teste
+    </p>
+  </div>
+</div>
+`;
