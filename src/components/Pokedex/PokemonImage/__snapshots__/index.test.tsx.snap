@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The PokemonImage Component Should match snapshot 1`] = `
+<div>
+  <div
+    class="sc-bcXHqe dFsVnp"
+  >
+    <img
+      alt="image"
+      src="img/img.png"
+    />
+  </div>
+</div>
+`;
