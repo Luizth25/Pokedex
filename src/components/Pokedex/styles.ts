@@ -42,3 +42,9 @@ export const Title = styled.h1`
   font-weight: 600;
   color: #fff;
 `;
+
+export const Wrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  margin: 0 20px;
+`;

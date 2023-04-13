@@ -15,6 +15,7 @@ body {
   background-position: 100%;
   background-repeat:no-repeat; 
   background-attachment: fixed;
+  background-size: cover;
 
   font-family: 'Open Sans', sans-serif;
 }
