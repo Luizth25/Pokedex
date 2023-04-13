@@ -18,39 +18,41 @@ const Pokedex = () => {
   };
 
   return (
-    <s.PokedexContainer>
-      <s.Title>Pokédex</s.Title>
-      <PokemonImage image={pokemon.image} name={pokemon.name} />
-      {loading ? (
-        <p>carregando</p>
-      ) : (
-        <>
-          <PokemonInfo
-            id={pokemon.id ? `# ${pokemon.id}` : ""}
-            abilities={pokemon.name ? "abilities" : ""}
-            name={pokemon.name}
-            baseExperience={pokemon.exp ? `Experience: ${pokemon.exp}` : ""}
-            weight={pokemon.weight ? `weight: ${pokemon.weight}` : ""}
-          >
-            <s.ListContainer>
-              {pokemon.abilities.map((ability) => (
-                <li key={ability}>
-                  <s.PokemonAbility>{ability}</s.PokemonAbility>
-                </li>
-              ))}
-            </s.ListContainer>
-          </PokemonInfo>
-        </>
-      )}
+    <s.Wrapper>
+      <s.PokedexContainer>
+        <s.Title>Pokédex</s.Title>
+        <PokemonImage image={pokemon.image} name={pokemon.name} />
+        {loading ? (
+          <p>carregando</p>
+        ) : (
+          <>
+            <PokemonInfo
+              id={pokemon.id ? `# ${pokemon.id}` : ""}
+              abilities={pokemon.name ? "abilities" : ""}
+              name={pokemon.name}
+              baseExperience={pokemon.exp ? `Experience: ${pokemon.exp}` : ""}
+              weight={pokemon.weight ? `weight: ${pokemon.weight}` : ""}
+            >
+              <s.ListContainer>
+                {pokemon.abilities.map((ability) => (
+                  <li key={ability}>
+                    <s.PokemonAbility>{ability}</s.PokemonAbility>
+                  </li>
+                ))}
+              </s.ListContainer>
+            </PokemonInfo>
+          </>
+        )}
 
-      <s.Input
-        type="text"
-        placeholder="Nome ou Id do Pokémon"
-        value={pokemonNameOrId}
-        onChange={(ev) => setPokemonNameOrId(ev.target.value)}
-      />
-      <Button label="Buscar" onClick={handleClick} />
-    </s.PokedexContainer>
+        <s.Input
+          type="text"
+          placeholder="Nome ou Id do Pokémon"
+          value={pokemonNameOrId}
+          onChange={(ev) => setPokemonNameOrId(ev.target.value)}
+        />
+        <Button label="Buscar" onClick={handleClick} />
+      </s.PokedexContainer>
+    </s.Wrapper>
   );
 };
 

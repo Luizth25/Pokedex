@@ -6,7 +6,7 @@ import theme from "styles/theme";
 import PokemonInfo from ".";
 
 describe("The PokemonInfo Component", () => {
-  it("Should be denied", () => {
+  it("Should be defined", () => {
     expect.assertions(1);
 
     expect(PokemonInfo).toBeDefined();
