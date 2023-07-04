@@ -12,17 +12,19 @@ export type TPokemonInfoRaw = {
   base_experience: number;
   weight: number;
   id: number;
-  sprites: {
-    versions: {
-      "generation-v": {
-        "black-white": {
-          animated: {
-            front_default: string;
+  sprites:
+    | {
+        versions: {
+          "generation-v": {
+            "black-white": {
+              animated: {
+                front_default: string;
+              };
+            };
           };
         };
-      };
-    };
-  };
+      }
+    | any;
   abilities: Array<TAbilitiesPokemonRaw>;
 };
 
